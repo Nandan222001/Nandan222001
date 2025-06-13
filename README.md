@@ -32,8 +32,18 @@
 <h3 align="left">Support:</h3>
 <p><a href="https://www.buymeacoffee.com/nandan222001"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="nandan222001" /></a></p><br><br>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=nandan222001&show_icons=true&locale=en&layout=compact" alt="nandan222001" /></p>
+<table>
+  <tr>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs?username=nandan222001&show_icons=true&locale=en&layout=compact" alt="Top Langs" height="150" />
+    </td>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api?username=nandan222001&show_icons=true&locale=en" alt="Stats" height="150" />
+    </td>
+    <td>
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=nandan222001" alt="Streak" height="150" />
+    </td>
+  </tr>
+</table>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=nandan222001&show_icons=true&locale=en" alt="nandan222001" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=nandan222001&" alt="nandan222001" /></p>
