@@ -1,0 +1,29 @@
+# Put this at: .github/workflows/blog.yml
+# Fills the BLOG-POST-LIST markers in README.md automatically.
+# Replace the feed_list URL with your own (Dev.to / Hashnode / Medium RSS).
+name: Latest Blog Posts
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          # Examples:
+          #   Dev.to     -> https://dev.to/feed/YOUR_USERNAME
+          #   Hashnode   -> https://YOUR_BLOG.hashnode.dev/rss.xml
+          #   Medium     -> https://medium.com/feed/@YOUR_USERNAME
+          feed_list: "https://dev.to/feed/nandan222001"
+          max_post_count: 5
+          template: "- [$title]($url) &nbsp;·&nbsp; <sub>$newline$date</sub>$newline"
+          date_format: "mmm d, yyyy"
+          commit_message: "chore: update blog posts"
